@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./logo-removebg-preview.png" sizes="16x16" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+ <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <title>new-home - Godamwale - Warehousing - 3PL and Fulfillment....</title>
+  </head>
+  <body>
+    <!-- main header -->
+    <header class="main-header">
+      <!-- header top strip -->
+      <div class="header-top-strip" style="display: none;">
+        <span class="header-span"
+          >Welcome to Godamwale - Your logistics partner awaits</span
+        >
+        <span class="header-contact-no-wrap"> +91-8291540681 </span>
+      </div>
+
+      <!-- header bottom strip -->
+      <div class="header-bottom-strip">
+        <!-- logo -->
+        <div class="main-logo-wrapper">
+          <img src="./logo.webp" alt="" width="250px" />
+        </div>
+
+        <!-- nav menus -->
+        <div class="main-nav-menus">
+          <ul class="nav-menus-ul" id="nav-menus-mobile">
+            <li>TECHNOLOGY</li>
+            <li>NETWORK</li>
+            <li>RESOURCES &nbsp; <i class="fa-solid fa-angle-down"></i></li>
+            <li>ABOUT</li>
+          </ul>
+
+          <div class="nav-menus-btn-wrapper">
+            <span id="ham-icon"><i class="fa-solid fa-bars"></i></span>
+            <button id="contact-btn">Contact Us</button>
+            <button id="list-warehouse-btn">List your Warehouse</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- banner slider auto playing -->
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <!-- carousel images -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!-- slider 1 -->
+          <div class="main-banner-section-1 slider-content">
+            <div class="banner-content">
+              <h1>3PL Solutions in Mumbai</h1>
+              <p>
+                Seamlessly Maintain Real-Time Inventory Anywhere You Work. Keep
+                Your Stock Accurate with Ease!"
+              </p>
+              <button>Equire Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <!-- slider 2 -->
+          <div class="main-banner-section-2 slider-content">
+            <div class="banner-content">
+              <h1>3PL Solutions in Mumbai</h1>
+              <p>
+                Seamlessly Maintain Real-Time Inventory Anywhere You Work. Keep
+                Your Stock Accurate with Ease!"
+              </p>
+              <button>Equire Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- previous button -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <!-- next button -->
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- below banner section -->
+    <main class="below-banner-section">
+      
+      <!-- below banner content -->
+        <div class="below-banner-content-wrapper">
+
+             <!-- details wrapper -->
+            <div class="below-banner-details-wrapper">
+
+              <!-- heading -->
+              <h2 class="below-banner-heading">Scale Your buisness With Godamwale ​3PL Fulfilment Solutions</h2>
+
+
+              <!-- list items -->
+              <ul class="below-banner-list-items">
+                <li>Godamwale is a premier marketplace dedicated to delivering ​efficient supply chain solutions to rapidly growing digital ​enterprises and large corporations.</li>
+
+                <li>Godamwale is a premier marketplace dedicated to delivering ​efficient supply chain solutions to rapidly growing digital ​enterprises and large corporations.</li>
+
+                <li>Godamwale is a premier marketplace dedicated to delivering ​efficient supply chain solutions to rapidly growing digital ​enterprises and large corporations.</li>
+              </ul>
+
+
+              <!-- btn wrapper -->
+              <div class="below-banner-btn-wrapper">
+                <button>Read More</button>
+              </div>
+
+            </div>
+
+            <!-- image wrapper -->
+            <div class="below-banner-img-wrapper">
+                <img src="./assets/below-banner-section/side-image.png" alt="">
+            </div>
+        </div>
+
+        
+
+
+    </main>
+
+    <!-- we offer section -->
+     <div class="we-offer-section">
+      <div class="we-offer-content-wrapper">
+        <!-- content here -->
+
+         <!-- heading -->
+         <div class="we-offer-heading">
+          <h2>We Offer Comprehensive And Secured 3PL 
+            Solution ​For Your Business in Mumbai</h2>
+         </div>
+         
+         <!-- we offer card wrapper -->
+          <div class="we-offer-cards-wrapper">
+
+
+
+            <!-- we offer cards top -->
+            <div class="we-offer-cards-top">
+              <!-- card 1 -->
+               <div class="we-offer-card-wrap">
+                  <!-- img wrapper -->
+                <div class="we-offer-img-wrap">
+                  <img src="./assets/we offer/we-offer-img.webp" alt="">
+                </div>
+
+                <!-- we offer info wrap -->
+                 <div class="we-offer-info-wrap">
+                  <h5>1 Lakh+ Sq. ft. Warehouse Space</h5>
+                 </div>
+                
+               </div>
+
+               <!-- card 2 -->
+               <div class="we-offer-card-wrap">
+                <!-- img wrapper -->
+              <div class="we-offer-img-wrap">
+                <img src="./assets/we offer/we-offer-img.webp" alt="">
+              </div>
+
+              <!-- we offer info wrap -->
+               <div class="we-offer-info-wrap">
+                <h5>Reduced Logistics ​Cost</h5>
+               </div>
+              
+             </div>
+
+             <!-- card 3 -->
+             <div class="we-offer-card-wrap">
+              <!-- img wrapper -->
+            <div class="we-offer-img-wrap">
+              <img src="./assets/we offer/we-offer-img.webp" alt="">
+            </div>
+
+            <!-- we offer info wrap -->
+             <div class="we-offer-info-wrap">
+              <h5>Inventory Accuracy 99​.99%</h5>
+             </div>
+            
+           </div>
+
+           <!-- card 4 -->
+           <div class="we-offer-card-wrap">
+            <!-- img wrapper -->
+          <div class="we-offer-img-wrap">
+            <img src="./assets/we offer/we-offer-img.webp" alt="">
+          </div>
+
+          <!-- we offer info wrap -->
+           <div class="we-offer-info-wrap">
+            <h5>Maximum Flexibility & Scalability</h5>
+           </div>
+          
+         </div>
+
+            </div>
+
+            <!-- we offer cards bottom -->
+            <div class="we-offer-cards-bottom">
+             <!-- card 1 -->
+             <div class="we-offer-card-wrap">
+              <!-- img wrapper -->
+            <div class="we-offer-img-wrap">
+              <img src="./assets/we offer/we-offer-img.webp" alt="">
+            </div>
+
+            <!-- we offer info wrap -->
+             <div class="we-offer-info-wrap">
+              <h5>1 Lakh+ Sq. ft. Warehouse Space</h5>
+             </div>
+            
+           </div>
+
+           <!-- card 2 -->
+           <div class="we-offer-card-wrap">
+            <!-- img wrapper -->
+          <div class="we-offer-img-wrap">
+            <img src="./assets/we offer/we-offer-img.webp" alt="">
+          </div>
+
+          <!-- we offer info wrap -->
+           <div class="we-offer-info-wrap">
+            <h5>Reduced Logistics ​Cost</h5>
+           </div>
+          
+         </div>
+
+         <!-- card 3 -->
+         <div class="we-offer-card-wrap">
+          <!-- img wrapper -->
+        <div class="we-offer-img-wrap">
+          <img src="./assets/we offer/we-offer-img.webp" alt="">
+        </div>
+
+        <!-- we offer info wrap -->
+         <div class="we-offer-info-wrap">
+          <h5>Inventory Accuracy 99​.99%</h5>
+         </div>
+        
+       </div>
+
+       <!-- card 4 -->
+       <div class="we-offer-card-wrap">
+        <!-- img wrapper -->
+      <div class="we-offer-img-wrap">
+        <img src="./assets/we offer/we-offer-img.webp" alt="">
+      </div>
+
+      <!-- we offer info wrap -->
+       <div class="we-offer-info-wrap">
+        <h5>Maximum Flexibility & Scalability</h5>
+       </div>
+      
+     </div>
+            </div>
+          </div>
+
+
+      </div>
+     </div>
+
+     <!-- map section -->
+      <div class="map-section">
+        <!-- content wrapper -->
+        <div class="map-section-content-wrapper">
+
+          <!-- location info -->
+          <div class="location-info">
+            <h3>Discover The Best Warehousing Solutions In Mumbai</h3>
+
+            <!-- location info card 1 -->
+            <div class="location-para-card">
+              <span><i style="color: red;" class="fa-solid fa-location-dot"></i> &nbsp;Bhiwandi</span>
+              <p>Indian Corporation Compound, Mankoli ​Bldg No.165/168, Village,opp. Gajanan ​petrol pump, Dapode, Bhiwandi, Maharashtra 421302</p>
+            </div>
+
+            <!-- location info card 2 -->
+            <div class="location-para-card">
+              <span><i class="fa-solid fa-location-dot"></i> &nbsp;Bhiwandi</span>
+              <p>Indian Corporation Compound, Mankoli ​Bldg No.165/168, Village,opp. Gajanan ​petrol pump, Dapode, Bhiwandi, Maharashtra 421302</p>
+            </div>
+
+            <div class="location-btn-wrapper">
+              <button>Check for more Location</button>
+            </div>
+
+          </div>
+
+          <!-- location map -->
+          <div id="map">
+            <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Indian%20Corporation%20Compound,%20Mankoli%20%E2%80%8BBldg%20No.165/168,%20Village,opp.%20Gajanan%20%E2%80%8Bpetrol%20pump,%20Dapode,%20Bhiwandi,%20Maharashtra%20421302+(Godamwale)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps drone</a></iframe></div>
+          </div>
+        </div>
+      </div>
+
+    <!-- inventory section -->
+<div class="inventory-section">
+    <div class="inventory-content-wrapper">
+      <!-- inventory section -->
+       <div class="inventory-img-wrapper">
+        <img src="./assets/inventory-section/inventory-1.webp" alt="">
+       </div>
+
+       <div class="inventory-info-wrapper">
+         <h2>Manage Your Inventory At Your Fingertips</h2>
+         <p>As a leading warehousing company, we understand the challenges that most businesses face. That's why we ​developed our warehouse and inventory management software, designed to address all your inventory ​management needs efficiently.</p>
+         <div id="stats-in-view" class="inventory-info-cards-wrapper">
+          <!-- row-1 -->
+            <div class="inventory-row-1">
+              <!-- card 1 -->
+               <div class="inventory-card-1">
+                <!-- img wrapper -->
+                 <div class="inventory-card-img-wrapper">
+                  <img src="./assets/inventory-section/icon-1.png" alt="">
+                 </div>
+
+                 <!-- inventory numbers wrapper-->
+                 <div class="inventory-card-numbers-wrapper">
+                  <h1>
+                    <span id="stat1" class="stat">99</span>
+                    <span>%</span>
+                  </h1>
+                  <h6>Shipping Accuracy</h6>
+                 </div>
+
+               </div>
+
+               <!-- card 2 -->
+               <div class="inventory-card-1">
+                <!-- img wrapper -->
+                 <div class="inventory-card-img-wrapper">
+                  <img src="./assets/inventory-section/icon-2.png" alt="">
+                 </div>
+
+                 <!-- inventory numbers wrapper-->
+                 <div class="inventory-card-numbers-wrapper">
+                  <h1>
+                    <span id="stat2" class="stat">30</span>
+                    <span>%</span>
+                  </h1>
+                  <h6>Faster Shipping</h6>
+                 </div>
+
+               </div>
+            </div>
+
+          <!-- row-2 -->
+           <div class="inventory-row-2">
+            <!-- card 1 -->
+            <div class="inventory-card-1">
+              <!-- img wrapper -->
+               <div class="inventory-card-img-wrapper">
+                <img src="./assets/inventory-section/icon-1.png" alt="">
+               </div>
+
+               <!-- inventory numbers wrapper-->
+               <div class="inventory-card-numbers-wrapper">
+                
+                <h1>
+                  <i style="color: red;" class="fa-solid fa-arrow-down-long"></i>
+                  <span id="stat3" class="stat">35</span>
+                  <span>%</span>
+                </h1>
+                <h6>Warehouse Cost</h6>
+               </div>
+
+             </div>
+
+             <!-- card 2 -->
+             <div class="inventory-card-1">
+              <!-- img wrapper -->
+               <div class="inventory-card-img-wrapper">
+                <img src="./assets/inventory-section/icon-2.png" alt="">
+               </div>
+
+               <!-- inventory numbers wrapper-->
+               <div class="inventory-card-numbers-wrapper">
+                <h1>
+                  <i style="color: green;" class="fa-solid fa-arrow-up-long"></i>
+                  <span id="stat4" class="stat">3</span>
+                  <span>X</span>
+                </h1>
+                <h6>Picking Efficiency</h6>
+               </div>
+
+             </div>
+           </div>
+         </div>
+       </div>
+    </div>
+</div>   
+
+
+<!-- our services section -->
+ <div class="our-services-section">
+  <div class="our-services-content-wrapper">
+    <h3>Our Services</h3>
+    <!-- row 1 -->
+    <div class="service-row-1">
+      <!-- card 1 -->
+       <div class="service-card-1-wrap">
+        <!-- img wrapper -->
+        <div class="img-holder">
+          <img src="./assets/our services/card-img.webp" alt="">
+        </div>
+
+        <!-- heading wrapper -->
+        <div class="heading-holder">
+       <h4>B2B & B2C Fulfillment</h4>
+        </div>
+
+        <!-- para wrapper -->
+         <div class="para-holder">
+          <p>seamless B2B and B2C ​fulfillment services ​through our extensive ​network of 300+ 3PL ​centers across India</p>
+         </div>
+
+       </div>
+
+       <!-- card 2 -->
+       <div class="service-card-1-wrap">
+        <!-- img wrapper -->
+        <div class="img-holder">
+          <img src="./assets/our services/card-img.webp" alt="">
+        </div>
+
+        <!-- heading wrapper -->
+        <div class="heading-holder">
+       <h4>Cross Docking</h4>
+        </div>
+
+        <!-- para wrapper -->
+         <div class="para-holder">
+          <p>seamless B2B and B2C ​fulfillment services ​through our extensive ​network of 300+ 3PL ​centers across India</p>
+         </div>
+
+       </div>
+
+
+       <!-- card 3 -->
+       <div class="service-card-1-wrap">
+        <!-- img wrapper -->
+        <div class="img-holder">
+          <img src="./assets/our services/card-img.webp" alt="">
+        </div>
+
+        <!-- heading wrapper -->
+        <div class="heading-holder">
+       <h4>Cold Storage</h4>
+        </div>
+
+        <!-- para wrapper -->
+         <div class="para-holder">
+          <p>seamless B2B and B2C ​fulfillment services ​through our extensive ​network of 300+ 3PL ​centers across India</p>
+         </div>
+
+       </div>
+
+    </div>
+
+    <!-- row 2 -->
+    <div class="service-row-2">
+      <!-- card 1 -->
+      <div class="service-card-1-wrap">
+        <!-- img wrapper -->
+        <div class="img-holder">
+          <img src="./assets/our services/card-img.webp" alt="">
+        </div>
+
+        <!-- heading wrapper -->
+        <div class="heading-holder">
+       <h4>Kitting and Other VAS</h4>
+        </div>
+
+        <!-- para wrapper -->
+         <div class="para-holder">
+          <p>seamless B2B and B2C ​fulfillment services ​through our extensive ​network of 300+ 3PL ​centers across India</p>
+         </div>
+
+       </div>
+
+       <!-- card 2 -->
+       <div class="service-card-1-wrap">
+        <!-- img wrapper -->
+        <div class="img-holder">
+          <img src="./assets/our services/card-img.webp" alt="">
+        </div>
+
+        <!-- heading wrapper -->
+        <div class="heading-holder">
+       <h4>Retail Distribution</h4>
+        </div>
+
+        <!-- para wrapper -->
+         <div class="para-holder">
+          <p>seamless B2B and B2C ​fulfillment services ​through our extensive ​network of 300+ 3PL ​centers across India</p>
+         </div>
+
+       </div>
+
+
+       <!-- card 3 -->
+       <div class="service-card-1-wrap">
+        <!-- img wrapper -->
+        <div class="img-holder">
+          <img src="./assets/our services/card-img.webp" alt="">
+        </div>
+
+        <!-- heading wrapper -->
+        <div class="heading-holder">
+       <h4>Control Tower Dashboard</h4>
+        </div>
+
+        <!-- para wrapper -->
+         <div class="para-holder">
+          <p>seamless B2B and B2C ​fulfillment services ​through our extensive ​network of 300+ 3PL ​centers across India</p>
+         </div>
+
+       </div>
+
+    </div>
+  </div>
+ </div>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
