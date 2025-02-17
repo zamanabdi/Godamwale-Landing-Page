@@ -1974,8 +1974,12 @@ height: 90px;
 
 #inventory-bottom-heading{
     padding: 0px 0px;
-    width: 336px;
+    width: 320px;
     margin: 0 auto;
+}
+
+.faq-content-wrapper h2{
+    text-align: center;
 }
 
 .inventory-bottom-btn{
@@ -1989,6 +1993,106 @@ height: 90px;
 
    .inventory-bottom-img-wrap{
     bottom: 0px;
+   }
+
+   /* footer */
+   .footer-section{
+    height: 100%;
+    margin-top: 53px;
+   }
+
+
+   .footer-bottom-strip{
+    height: 100%;
+   }
+
+   .footer-bottom-content-wrapper {
+    width: 100%;
+    padding: 25px 10px;
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+    padding: 25px;
+}
+
+   .footer-content-wrapper{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+   }
+
+
+   .start-portion-div{
+    flex-direction: column;
+    width: 89%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+
+   .f-row-1{
+    position: relative;
+    left: 15px;
+   }
+
+   .f-row-2 {
+    /* border: 1px solid yellow; */
+    color: white;
+    padding-top: 40px;
+    width: 288px;
+    display: flex
+;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+.end-portion-div{
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.f-row-3{
+    /* border: 1px solid yellow; */
+    position: relative;
+    left: -13px;
+}
+
+.f-row-4{
+    left: -13px;
+}
+
+.f-row-5 {
+    position: relative;
+    right: 10px;
+}
+
+
+
+   
+
+
+   
+
+   .start-portion-div {
+    /* border: 1px solid blueviolet; */
+    height: 100%;
+    width: 69%;
+    display: flex;
+    color: white;
+}
+
+.end-portion-div{
+    width: 77%;
+}
+
+#para-cin{
+    font-size: 12px;
+    font-family: Poppins;
+    /* border: 1px solid yellow; */
+    margin-top: 45px;
    }
 
 
@@ -2409,6 +2513,114 @@ height: 90px;
    .inventory-bottom-img-wrap{
     bottom: 0px;
    }
+
+   .faq-content-wrapper h2{
+    text-align: center;
+   }
+   
+   /* footer */
+   .footer-section{
+    height: 100%;
+    margin-top: 53px;
+   }
+
+
+   .footer-bottom-strip{
+    height: 100%;
+   }
+
+   .footer-bottom-content-wrapper {
+    width: 100%;
+    padding: 25px 10px;
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+    padding: 25px;
+}
+
+   .footer-content-wrapper{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+   }
+
+
+   .start-portion-div{
+    flex-direction: column;
+    width: 89%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+
+   .f-row-1{
+    position: relative;
+    left: 15px;
+   }
+
+   .f-row-2 {
+    /* border: 1px solid yellow; */
+    color: white;
+    padding-top: 40px;
+    width: 288px;
+    display: flex
+;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+.end-portion-div{
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.f-row-3{
+    /* border: 1px solid yellow; */
+    position: relative;
+    left: 20px;
+}
+
+.f-row-4{
+    left: 20px;
+}
+
+.f-row-5 {
+    right: -20px !important;
+}
+
+
+
+   
+
+
+   .f-row-5{
+    right: -37px;
+   }
+
+   .start-portion-div {
+    /* border: 1px solid blueviolet; */
+    height: 100%;
+    width: 69%;
+    display: flex;
+    color: white;
+}
+
+.end-portion-div{
+    width: 77%;
+}
+
+#para-cin{
+    font-size: 12px;
+    font-family: Poppins;
+    /* border: 1px solid yellow; */
+    margin-top: 45px;
+   }
+
+
+   
 }
 
 
@@ -2686,6 +2898,52 @@ padding-right: 0px;
    .manage-inventory-content-wrapper{
     width: 100%;
    }
+
+
+   /* footer */
+   .footer-section{
+    height: 100%;
+    margin-top: 53px;
+   }
+
+
+   .footer-content-wrapper{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .footer-bottom-content-wrapper{
+    width: 100%;
+   padding: 0px 10px;
+   }
+
+
+   .f-row-5{
+    right: -37px;
+   }
+
+   .start-portion-div {
+    /* border: 1px solid blueviolet; */
+    height: 100%;
+    width: 69%;
+    display: flex;
+    color: white;
+}
+
+.end-portion-div{
+    width: 77%;
+}
+
+#para-cin{
+    font-size: 12px;
+    font-family: Poppins;
+    /* border: 1px solid yellow; */
+    margin-top: 45px;
+   }
+
+
+
 }
 
 
@@ -2808,6 +3066,15 @@ padding-right: 0px;
    .faq-content-wrapper{
     width: 100%;
     padding: 0px 36px;
+   }
+
+   /* footer */
+   .footer-content-wrapper{
+    width: 100%;
+   }
+
+   .f-row-5{
+    right: -37px;
    }
 
 
