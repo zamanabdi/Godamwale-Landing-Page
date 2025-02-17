@@ -269,10 +269,24 @@ ourClientSlider.style.transition = "all 0.5s ease";
 })
 
 
+let clickValue = 0;
 
 function handleAutoSlide(){
+  clickValue++;
+  
+  if(clickValue == 1){
+    ourClientSlider.style.transform  = "translateX(-10px)";
+    ourClientSlider.style.transition = "all 0.5s ease";
+      }
+      else if(clickValue == 2){
+       ourClientSlider.style.transform = "translateX(-855px)";
+       ourClientSlider.style.transition = "all 0.5s ease";
+      }else{
+        ourClientSlider.style.transform = "translateX(855px)";
+        ourClientSlider.style.transition = "all 0.5s ease";
+      }
   
 }
 
-
+setInterval(handleAutoSlide, 3500);
 
